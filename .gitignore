@@ -1,8 +1,9 @@
 # @source: https://github.com/xrkffgg/gitignore/blob/master/.gitignore
 
 # production
-/dist
+# /dist
 /docs-dist
+/lib
 
 # Log file
 *.log
