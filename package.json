@@ -1,0 +1,32 @@
+{
+  "name": "action-ts-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A typescript template for rapid development of GitHub actions.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "package": "ncc build --source-map --license licenses.txt",
+    "test": "jest",
+    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actions-cool/action-ts-template",
+    "branch": "main"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "setup",
+    "template"
+  ],
+  "author": "xrkffgg",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
+}
