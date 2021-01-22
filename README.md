@@ -40,6 +40,6 @@ The rest of the documents can be consulted by yourself.
 | package | action build for release |
 | all | npm all |
 
-## MIT
+## LICENSE
 
-https://github.com/actions-cool/action-ts-template/blob/main/LICENSE
+[MIT](https://github.com/actions-cool/action-ts-template/blob/main/LICENSE)
