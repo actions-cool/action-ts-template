@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Action TS Template'
+description: 'A typescript template for rapid development of GitHub actions.'
+author: 'xrkffgg'
 
 branding:
   # https://feathericons.com/
