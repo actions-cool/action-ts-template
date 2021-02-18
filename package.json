@@ -6,8 +6,8 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
+    "format": "prettier --write src/*.ts",
+    "format-check": "prettier --check src/*.ts",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build",
     "all": "npm run build && npm run format-check && npm run lint && npm run package"
@@ -17,12 +17,6 @@
     "url": "https://github.com/actions-cool/action-ts-template",
     "branch": "main"
   },
-  "keywords": [
-    "actions",
-    "node",
-    "setup",
-    "template"
-  ],
   "author": "xrkffgg",
   "license": "MIT",
   "dependencies": {

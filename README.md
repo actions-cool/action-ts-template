@@ -9,7 +9,9 @@
 A typescript template for rapid development of GitHub actions.
 </div>
 
-![CI](https://github.com/actions-cool/action-ts-template/workflows/CI/badge.svg)
+![](https://img.shields.io/github/workflow/status/actions-cool/action-ts-template/CI?style=flat-square)
+[![](https://img.shields.io/badge/marketplace-action--ts--template-blueviolet?style=flat-square)](https://github.com/marketplace/actions/action-ts-template)
+[![](https://img.shields.io/github/v/release/actions-cool/action-ts-template?style=flat-square&color=orange)](https://github.com/actions-cool/action-ts-template/releases)
 
 ## 🚀 How to use?
 
