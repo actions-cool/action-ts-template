@@ -1,4 +1,6 @@
 import * as core from '@actions/core';
+import * as github from '@actions/github';
+import { Octokit } from '@octokit/rest';
 
 async function run(): Promise<void> {
   try {
@@ -12,7 +14,7 @@ async function run(): Promise<void> {
     core.debug(new Date().toTimeString());
 
     core.setOutput('time', new Date().toTimeString());
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message);
   }
 }

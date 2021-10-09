@@ -42,6 +42,17 @@ The rest of the documents can be consulted by yourself.
 | package | action build for release |
 | all | npm all |
 
+## ⚡ Feedback
+
+You are very welcome to try it out and put forward your comments. You can use the following methods:
+
+- Report bugs or consult with [Issue](https://github.com/actions-cool/action-ts-template/issues)
+- Submit [Pull Request](https://github.com/actions-cool/action-ts-template/pulls) to improve the code of `action-ts-template`
+
+也欢迎加入 钉钉交流群
+
+![](https://github.com/actions-cool/resources/blob/main/dingding.jpeg?raw=true)
+
 ## LICENSE
 
 [MIT](https://github.com/actions-cool/action-ts-template/blob/main/LICENSE)

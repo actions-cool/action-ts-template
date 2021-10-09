@@ -3,7 +3,7 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  setup:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: checkout

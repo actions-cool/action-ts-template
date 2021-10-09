@@ -1,33 +1,36 @@
 {
   "name": "action-ts-template",
-  "version": "0.0.1",
   "private": true,
   "description": "A typescript template for rapid development of GitHub actions.",
-  "main": "lib/main.js",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write src/*.ts",
-    "format-check": "prettier --check src/*.ts",
-    "lint": "eslint src/**/*.ts",
-    "package": "ncc build",
-    "all": "npm run build && npm run format-check && npm run lint && npm run package"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/actions-cool/action-ts-template",
     "branch": "main"
   },
-  "author": "xrkffgg",
   "license": "MIT",
+  "author": "xrkffgg",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint src/**/*.ts --fix",
+    "package": "ncc build src/main.ts -o dist",
+    "all": "npm run format-check && npm run lint && npm run package"
+  },
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "@octokit/rest": "^18.0.14"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^4.15.2",
     "@umijs/fabric": "^2.5.6",
-    "@vercel/ncc": "^0.28.0",
+    "@vercel/ncc": "^0.27.0",
     "eslint": "^7.18.0",
+    "eslint-plugin-github": "^4.1.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
