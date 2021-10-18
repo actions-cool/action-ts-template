@@ -9,7 +9,7 @@ branding:
   color: 'blue'
 
 inputs:
-  GITHUB_TOKEN:
+  token:
     description: Secret GitHub API token to use for making API requests.
     default: ${{ github.token }}
     required: true

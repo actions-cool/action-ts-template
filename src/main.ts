@@ -4,16 +4,19 @@ import { Octokit } from '@octokit/rest';
 
 async function run(): Promise<void> {
   try {
-    const ms: string = core.getInput('milliseconds');
-    core.debug(`Waiting ${ms} milliseconds ...`); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
+    const token = core.getInput('token');
+    // API: https://actions-cool.github.io/octokit-rest/
+    const octokit = new Octokit({ auth: `token ${token}` });
 
-    core.debug(new Date().toTimeString());
-    await new Promise(resolve => {
-      setTimeout(() => resolve('done!'), 10);
-    });
-    core.debug(new Date().toTimeString());
+    const context = github.context;
+    const username = context.actor;
 
-    core.setOutput('time', new Date().toTimeString());
+    // This is a test
+    await octokit.users.getByUsername({
+      username,
+    })
+
+    core.info(`[Action Query] Query ${username} success!`);
   } catch (error: any) {
     core.setFailed(error.message);
   }
