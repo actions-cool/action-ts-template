@@ -14,7 +14,7 @@ async function run(): Promise<void> {
     // This is a test
     await octokit.users.getByUsername({
       username,
-    })
+    });
 
     core.info(`[Action Query] Query ${username} success!`);
   } catch (error: any) {
