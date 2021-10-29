@@ -53,6 +53,11 @@ You are very welcome to try it out and put forward your comments. You can use th
 
 ![](https://github.com/actions-cool/resources/blob/main/dingding.jpeg?raw=true)
 
+## Changelog
+
+[CHANGELOG](./CHANGELOG.md)
+
 ## LICENSE
 
-[MIT](https://github.com/actions-cool/action-ts-template/blob/main/LICENSE)
+[MIT](./LICENSE)
+
