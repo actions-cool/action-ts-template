@@ -22,7 +22,8 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "@octokit/rest": "^18.0.14"
+    "@octokit/rest": "^18.0.14",
+    "actions-util": "^1.1.4"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^4.15.2",
