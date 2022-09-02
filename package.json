@@ -17,6 +17,7 @@
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint src/**/*.ts --fix",
     "package": "ncc build src/main.ts -o dist",
+    "pub": "sh -e ./scripts/pub.sh",
     "all": "npm run format-check && npm run lint && npm run package"
   },
   "dependencies": {
@@ -29,10 +30,14 @@
     "@typescript-eslint/parser": "^4.15.2",
     "@umijs/fabric": "^2.5.6",
     "@vercel/ncc": "^0.27.0",
+    "chalk": "^4.1.2",
     "eslint": "^7.18.0",
     "eslint-plugin-github": "^4.1.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "new-github-release-url": "^1.0.0",
+    "open": "^7.3.0",
     "prettier": "^2.2.1",
+    "simple-git": "^2.46.0",
     "typescript": "^4.1.3"
   }
 }
